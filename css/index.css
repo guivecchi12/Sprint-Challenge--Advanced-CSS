@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home .intro {
+  margin-top: 100px;
+}
 .home .intro img {
   border-radius: 5px;
 }
@@ -222,8 +225,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 15px;
     margin-top: 20px;
+    padding: 20px 15px;
   }
 }
 .home .walk .walk-text {
@@ -285,18 +288,23 @@ p {
   border-radius: 10px;
 }
 div.navigation {
-  height: 15vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background: #F6F6F6;
+  opacity: 0.8;
 }
 div.navigation h1 {
   font-size: 4rem;
 }
 div.navigation nav {
-  width: 30%;
+  padding-top: 20px;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -312,6 +320,11 @@ div.navigation nav a {
   color: #454A59;
   font-size: 1.8rem;
   font-weight: bold;
+}
+div.navigation nav a:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
+  font-size: 1.9rem;
 }
 footer {
   color: #22283B;
