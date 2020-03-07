@@ -1,1 +1,19 @@
 // Mixins Here
+.flex( @j, @a, @d:row){
+    display:flex;
+    justify-content: @j;
+    align-items: @a;
+    flex-direction: @d;
+}
+.button( @w:30%, @p:8px 0, @r:5px ){
+    width:@w;
+    padding: @p;
+    border-radius:@r;
+    color:white;
+    background:black;
+   
+}
+.hover-color(@c, @bg){
+    color:@c;
+    background-color: @bg;
+}
