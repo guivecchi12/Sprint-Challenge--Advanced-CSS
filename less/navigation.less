@@ -1,1 +1,23 @@
 // Navigation code here
+div.navigation{
+    height:15vh;
+    .flex(space-around,center,column);
+    background: @nav-bg;
+    h1{
+        font-size: 4rem;
+    }
+    nav{
+        width:30%;
+        .flex(space-between,center);
+        @media @phone{
+            width:80%;
+        }
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+    }
+}
