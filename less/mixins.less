@@ -5,9 +5,15 @@
     align-items: @a;
     flex-direction: @d;
 }
-.button( @w:30%, @c:white, @bg:black, @r:5px ){
+.button( @w:30%, @p:8px 0, @r:5px ){
     width:@w;
-    color:@c;
-    background:@bg;
+    padding: @p;
     border-radius:@r;
+    color:white;
+    background:black;
+   
+}
+.btn-hover(@c, @bg){
+    color:@c;
+    background-color: @bg;
 }
